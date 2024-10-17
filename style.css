@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container .text input{
+    padding: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px black solid;
+    font-size: 20px;
+}
+
+.container .text button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.container .text button:hover{
+    scale: 1.1;
+    transition: .4s;
+}
+
+
+.container .infos{
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.container .text .restart{
+    background-color: red;
+}
+
+
+.container h1{
+    margin: 50px 20px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid black;
+}
+
+
+@media screen and (max-width : 900px) {
+    .container h1{
+        font-size: 20px;
+    }
+    .container .text input{
+        padding: 5px;
+        width: 220px;
+    }
+    .container .text button{
+        padding: 7px;
+    }
+    .container .infos{
+        font-size: 15px;
+    }
+}
